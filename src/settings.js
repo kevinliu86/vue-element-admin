@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Kevin Liu's Demo",
+  title: "Yanchao Liu's Demo",
 
   /**
    * @type {boolean} true | false

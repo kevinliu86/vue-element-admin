@@ -100,6 +100,7 @@ export const constantRoutes = [
     path: '/guide',
     component: Layout,
     redirect: '/guide/index',
+    hidden: true,
     children: [
       {
         path: 'index',
@@ -141,6 +142,7 @@ export const asyncRoutes = [
       icon: 'lock',
       roles: ['admin', 'editor'] // you can set roles in root nav
     },
+    hidden: true,
     children: [
       {
         path: 'page',
@@ -175,6 +177,7 @@ export const asyncRoutes = [
   {
     path: '/icon',
     component: Layout,
+    hidden: true,
     children: [
       {
         path: 'index',
@@ -200,6 +203,7 @@ export const asyncRoutes = [
       title: 'Example',
       icon: 'el-icon-s-help'
     },
+    hidden: true,
     children: [
       {
         path: 'create',
@@ -241,6 +245,7 @@ export const asyncRoutes = [
     component: Layout,
     redirect: 'noRedirect',
     name: 'ErrorPages',
+    hidden: true,
     meta: {
       title: 'Error Pages',
       icon: '404'
@@ -264,6 +269,7 @@ export const asyncRoutes = [
   {
     path: '/error-log',
     component: Layout,
+    hidden: true,
     children: [
       {
         path: 'log',
@@ -350,6 +356,7 @@ export const asyncRoutes = [
   {
     path: '/theme',
     component: Layout,
+    hidden: true,
     children: [
       {
         path: 'index',
@@ -363,6 +370,7 @@ export const asyncRoutes = [
   {
     path: '/clipboard',
     component: Layout,
+    hidden: true,
     children: [
       {
         path: 'index',

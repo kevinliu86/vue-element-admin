@@ -11,6 +11,7 @@ const nestedRouter = {
     title: 'Nested Routes',
     icon: 'nested'
   },
+  hidden: true,
   children: [
     {
       path: 'menu1',
@@ -18,6 +19,7 @@ const nestedRouter = {
       name: 'Menu1',
       meta: { title: 'Menu 1' },
       redirect: '/nested/menu1/menu1-1',
+      hidden: true,
       children: [
         {
           path: 'menu1-1',
@@ -58,6 +60,7 @@ const nestedRouter = {
       path: 'menu2',
       name: 'Menu2',
       component: () => import('@/views/nested/menu2/index'),
+      hidden: true,
       meta: { title: 'Menu 2' }
     }
   ]
