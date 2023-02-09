@@ -239,7 +239,18 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  {
+    path: '/workExample',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/workExample/index'),
+        name: 'Tab',
+        meta: { title: 'Work Example', icon: 'tab' }
+      }
+    ]
+  },
   {
     path: '/error',
     component: Layout,
