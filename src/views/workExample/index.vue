@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outer">
     <h1>Work Example</h1>
     <p>(All data are mock data, no real data involved)</p>
     <div class="main-content">
@@ -35,11 +35,19 @@ export default {
 </script>
 
 <style scoped>
+p {
+    margin: 0;
+}
 img {
     width:70%;
 }
+h1 {
+    margin-bottom:5px;
+}
+.outer {
+    padding-left: 10px;
+}
 .main-content {
-    margin-left: 5px;
   display: flex;
   flex-direction: column;
 }

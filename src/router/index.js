@@ -84,6 +84,18 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/workExample',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/workExample/index'),
+        name: 'Tab',
+        meta: { title: 'Work Example', icon: 'el-icon-folder-opened' }
+      }
+    ]
+  },
+  {
     path: '/documentation',
     component: Layout,
     hidden: true,
@@ -236,18 +248,6 @@ export const asyncRoutes = [
         component: () => import('@/views/tab/index'),
         name: 'Tab',
         meta: { title: 'Tab', icon: 'tab' }
-      }
-    ]
-  },
-  {
-    path: '/workExample',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/workExample/index'),
-        name: 'Tab',
-        meta: { title: 'Work Example', icon: 'tab' }
       }
     ]
   },
